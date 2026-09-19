@@ -76,33 +76,6 @@ Lid Closes
 
 ---
 
-## 📸 Project Screenshots
-
-### Smart Dustbin
-
-![Smart Dustbin](screenshots/smart-dustbin.jpg)
-
-### Circuit
-
-![Circuit](screenshots/circuit.jpg)
-
-### Final Output
-
-![Final Output](screenshots/final-output.jpg)
-
----
-
-## 💻 Source Code
-
-[View Arduino Source Code](code/smart_dustbin.ino)
-
----
-
-## 🎥 Project Demonstration
-
-[Watch Smart Dustbin Demo](video/smart-dustbin-demo.mp4)
-
----
 
 ## 📊 Project Outcome
 
