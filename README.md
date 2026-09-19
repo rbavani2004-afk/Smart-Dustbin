@@ -78,7 +78,7 @@ Lid Closes
 
 ## 🎥 Project Demo
 
-[▶️ Watch Smart Dustbin Demo](video/smart-dustbin-demo.mp4)
+[▶️ Watch Smart Dustbin Demo](Smart Dustbin - Demo (2).mp4)
 
 ---
 
