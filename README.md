@@ -24,7 +24,7 @@ The system uses an ultrasonic sensor to detect a nearby object and automatically
 
 ### Hardware
 
-- Arduino
+- Arduino  
 - Ultrasonic Sensor
 - Servo Motor
 - Dustbin
