@@ -1,0 +1,60 @@
+#include <Servo.h>
+
+Servo dustbinServo;
+
+const int trigPin = 9;
+const int echoPin = 10;
+const int servoPin = 6;
+
+long duration;
+int distance;
+
+void setup() {
+  Serial.begin(9600);
+
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+
+  dustbinServo.attach(servoPin);
+
+  // Initially close the lid
+  dustbinServo.write(0);
+}
+
+void loop() {
+
+  // Send ultrasonic signal
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+
+  digitalWrite(trigPin, LOW);
+
+  // Receive echo
+  duration = pulseIn(echoPin, HIGH);
+
+  // Calculate distance in cm
+  distance = duration * 0.034 / 2;
+
+  Serial.print("Distance: ");
+  Serial.print(distance);
+  Serial.println(" cm");
+
+  // If object is within 20 cm
+  if (distance > 0 && distance <= 20) {
+
+    // Open lid
+    dustbinServo.write(90);
+
+    delay(3000);
+
+    // Close lid
+    dustbinServo.write(0);
+
+    delay(1000);
+  }
+
+  delay(200);
+}
